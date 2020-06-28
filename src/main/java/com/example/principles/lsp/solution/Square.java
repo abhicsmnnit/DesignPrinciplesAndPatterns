@@ -1,7 +1,6 @@
 package com.example.principles.lsp.solution;
 
 public class Square implements IShape {
-
     private int side;
 
     @Override
