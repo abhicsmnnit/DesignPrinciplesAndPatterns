@@ -2,11 +2,11 @@ package com.example.principles.isp;
 
 public class Twitr {
     public static void main(String[] args) {
-        handleOperations(new PostManagerForGuest());
-        handleOperations(new PostManagerForUser());
+        performPostOperations(new PostManagerForGuest());
+        performPostOperations(new PostManagerForUser());
     }
 
-    private static void handleOperations(IPostManager postManager) {
+    private static void performPostOperations(IPostManager postManager) {
         postManager.createPost();
         postManager.readPost();
     }

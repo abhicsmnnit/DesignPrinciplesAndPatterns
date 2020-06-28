@@ -2,17 +2,17 @@ package com.example.principles.isp.solution;
 
 public class Twitr {
     public static void main(String[] args) {
-        handleReads(new PostManagerForGuest());
-        handleReads(new PostManagerForUser());
+        readPost(new PostManagerForGuest());
+        readPost(new PostManagerForUser());
 
-        handleCreates(new PostManagerForUser());
+        createPost(new PostManagerForUser());
     }
 
-    private static void handleReads(IPostReader reader) {
+    private static void readPost(IPostReader reader) {
         reader.readPost();
     }
 
-    private static void handleCreates(IPostCreator creator) {
+    private static void createPost(IPostCreator creator) {
         creator.createPost();
     }
 }
