@@ -16,4 +16,12 @@ public class Book {
     void renderTextAsKfx() {
         // ...
     }
+
+    public static void main(String[] args) {
+        Book b = new Book();
+
+        b.renderTextAsPdf();
+        b.renderTextAsEPub();
+        b.renderTextAsKfx();
+    }
 }
