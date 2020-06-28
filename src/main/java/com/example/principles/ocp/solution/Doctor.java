@@ -5,17 +5,17 @@ public class Doctor extends Employee {
         super(id, name, isOnDuty);
     }
 
-    void diagnose() {
-        System.out.println("Diagnosing...");
-    }
-
-    void prescribeMedicines() {
-        System.out.println("Prescribing...");
-    }
-
     @Override
     public void performDuties() {
         diagnose();
         prescribeMedicines();
+    }
+
+    private void diagnose() {
+        System.out.println("Diagnosing...");
+    }
+
+    private void prescribeMedicines() {
+        System.out.println("Prescribing...");
     }
 }

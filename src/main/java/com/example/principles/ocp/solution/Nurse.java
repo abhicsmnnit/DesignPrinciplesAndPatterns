@@ -5,22 +5,22 @@ public class Nurse extends Employee {
         super(id, name, isOnDuty);
     }
 
-    void checkVitals() {
-        System.out.println("Checking vital...");
-    }
-
-    void drawBlood() {
-        System.out.println("Checking vital...");
-    }
-
-    void clearTheWard() {
-        System.out.println("Clearing the patient ward...");
-    }
-
     @Override
     public void performDuties() {
         checkVitals();
         drawBlood();
         clearTheWard();
+    }
+
+    private void checkVitals() {
+        System.out.println("Checking vitals...");
+    }
+
+    private void drawBlood() {
+        System.out.println("Drawing blood...");
+    }
+
+    private void clearTheWard() {
+        System.out.println("Clearing the patient ward...");
     }
 }
